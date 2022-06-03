@@ -3,6 +3,8 @@ const { Schema, model } = require('mongoose');
 const ListaSchema = Schema({
    nickname: {
       type: String,
+      required: true,
+      unique: true
    },
    favoritos:{
        type: Array
